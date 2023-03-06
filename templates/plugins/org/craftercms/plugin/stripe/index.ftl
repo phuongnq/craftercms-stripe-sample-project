@@ -57,7 +57,7 @@
                 >
                   ${item.price_s}
                 </@crafter.div>
-                <div class="duration">per <@crafter.span $field="plans_o.recurring_s" $index="${index}">month</@crafter.span></div>
+                <div class="duration">per <@crafter.span $field="plans_o.recurring_s" $index="${index}">${item.recurring_s}</@crafter.span></div>
                 <button id="basic-plan-btn">Select</button>
               </form>
             </@crafter.section>
