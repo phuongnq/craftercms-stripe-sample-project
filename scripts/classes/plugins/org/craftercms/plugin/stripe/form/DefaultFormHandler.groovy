@@ -41,8 +41,8 @@ class DefaultFormHandler implements FormHandler {
         } catch(Exception e) {
             def responseData = [:]
             responseData.message = e.getMessage()
-            response.setStatus(400)
-            return '500.ftl'
+            println responseData
+            return '/templates/plugins/org/craftercms/plugin/stripe/500.ftl'
         }
     }
 }
