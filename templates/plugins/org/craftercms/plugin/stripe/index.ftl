@@ -50,14 +50,14 @@
                   class="name"
                 >
                   ${item.title_s}
-                </div>
+                </@crafter.div>
                 <@crafter.div
                   $field="plans_o.price_s"
                   $index="${index}"
                   class="name"
                 >
                   ${item.price_s}
-                </div>
+                </@crafter.div>
                 <div class="duration">per month</div>
                 <button id="basic-plan-btn">Select</button>
               </form>
