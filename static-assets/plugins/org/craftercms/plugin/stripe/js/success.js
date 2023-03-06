@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (sessionId) {
     document.querySelector("#sessionId").value = sessionId;
 
-    const session = await fetch(`/checkout-session?sessionId=${sessionId}`).then(r => r.json());
-    var sessionJSON = JSON.stringify(session, null, 2);
+    const session = await fetch(`/api/plugins/org/craftercms/plugin/stripe/checkout-session.json?sessionId=${sessionId}`).then(r => r.json());
+    const sessionJSON = JSON.stringify(session, null, 2);
     document.querySelector("pre").textContent = sessionJSON;
   }
 });
