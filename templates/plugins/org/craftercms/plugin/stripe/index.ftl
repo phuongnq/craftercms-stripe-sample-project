@@ -1,3 +1,4 @@
+<#import "/templates/system/common/crafter.ftl" as crafter />
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +21,7 @@
         <header class="sr-header">
           <div class="sr-header__logo"></div>
         </header>
-        <h1>Choose a collaboration plan</h1>
+        <@crafter.h1 $field="heading_t">${contentModel.heading_s}</@crafter.h1>
 
         <div class="price-table-container">
           <section>
