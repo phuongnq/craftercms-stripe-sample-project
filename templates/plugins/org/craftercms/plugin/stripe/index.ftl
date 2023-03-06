@@ -24,7 +24,7 @@
 
         <div class="price-table-container">
           <section>
-            <form action="/create-checkout-session" method="POST">
+            <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
               <input type="hidden" id="basicPrice" name="priceId">
               <img
                 src="/static-assets/plugins/org/craftercms/plugin/stripe/img/starter.png"
@@ -38,7 +38,7 @@
             </form>
           </section>
           <section>
-            <form action="/create-checkout-session" method="POST">
+            <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
               <input type="hidden" id="proPrice" name="priceId">
               <img
                 src="/static-assets/plugins/org/craftercms/plugin/stripe/img/professional.png"
