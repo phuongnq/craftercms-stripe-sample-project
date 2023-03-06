@@ -38,7 +38,7 @@
                 $index="${index}"
                 src="${item.thumbnail_s}"
                 alt="item.title_s"
-                width="120"
+                height="120"
               />
               <@crafter.div
                 $field="plans_o.title_s"

@@ -394,7 +394,7 @@ pre {
 .price-table-container section {
   border-radius: 6px;
   padding: 32px 28px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
