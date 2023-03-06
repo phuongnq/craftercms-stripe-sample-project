@@ -21,7 +21,7 @@
         <header class="sr-header">
           <div class="sr-header__logo"></div>
         </header>
-        <@crafter.h1 $field="heading_t">${contentModel.heading_s}</@crafter.h1>
+        <@crafter.h1 $field="heading_t">${contentModel.heading_t}</@crafter.h1>
 
         <div class="price-table-container">
           <section>
