@@ -29,7 +29,7 @@ class DefaultFormHandler implements FormHandler {
             .setMode(SessionCreateParams.Mode.SUBSCRIPTION)
             .addLineItem(new SessionCreateParams.LineItem.Builder()
                 .setQuantity(1L)
-                .setPrice(request.queryParams('priceId'))
+                .setPrice(params.priceId)
                 .build()
             )
             .build()
