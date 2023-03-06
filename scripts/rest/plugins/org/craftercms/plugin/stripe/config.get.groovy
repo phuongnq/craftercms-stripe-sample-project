@@ -1,7 +1,7 @@
 def result = [:]
 
-result.publishableKey = siteConfig.get('stripe.publishableKey')
-result.basicPrice = siteConfig.get('basicPrice')
-result.proPrice = siteConfig.get('proPrice')
+result.publishableKey = siteConfig.getString('stripe.publishableKey')
+result.basicPrice = siteConfig.getString('basicPrice')
+result.proPrice = siteConfig.getString('proPrice')
 
 return result
