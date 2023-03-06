@@ -25,8 +25,9 @@
       <publishableKey>${enc:CCE-V1#bUhsL6BIyUXlFdFQTfaH29quknYikGMdRR4qOCfhu3SYqOqpNunj8G+CZBQ+gbX40f/ficOIXzygX2/b4lvQsIquwmyzqbxGraKNsR1k6XE1jShgv5rK5eu9++dJJV0e+1kS8/AmRbbiynk8HoMeqronDyc4WSUEzPTryKunpoE=}</publishableKey>
       <secretKey>${enc:CCE-V1#z48hAvk2Bn1MCptwj2V/c9kMOOrd3wdeNZoItfWMS9gTM7feZq7W+/f2gmMgXJW54T6Y1UTq+3w6E//y8WwiZTjzcTMhdTf4jtC4ZEtjH3XFALfdTdy0yKZL7f+bnOkF5NiigweLrCTz7OqAOZhbqzzuH5y4zh6QCDQix3o+vNM=}</secretKey>
       <webhookSecret>${enc:CCE-V1#sO73Bk+bSQlTtlfW7MNbp9KzpuU19u3q7tZKmabF/f2FyzlV5eqzC0tFOgFvRh3WEprhH3rYvU/UvERbyLyNt8x2KiLfrXv73mpuKp5jZBiCSytU+cxCOJtw/Ocx6Zsl}</webhookSecret>
-      <basicPriceId>price_1MiVjLAbLlprQOWgxSCA8zjk</basicPriceId>
+      <basicPriceId>price_1MiauIAbLlprQOWgfVrkp0n6</basicPriceId>
       <proPriceId>price_1MiVkSAbLlprQOWgr0Muotvm</proPriceId>
+      <enterprisePriceId>price_1MiavyAbLlprQOWgkzZwgCKH</enterprisePriceId>
       <callbackDomain>http://localhost:8080</callbackDomain>
     </stripe>
 </site>
