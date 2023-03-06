@@ -14,8 +14,8 @@
 	<folder-name>test</folder-name>
 	<createdDate>2023-03-06T07:54:57.709Z</createdDate>
 	<createdDate_dt>2023-03-06T07:54:57.709Z</createdDate_dt>
-	<lastModifiedDate>2023-03-06T09:25:37.167Z</lastModifiedDate>
-	<lastModifiedDate_dt>2023-03-06T09:25:37.167Z</lastModifiedDate_dt>
+	<lastModifiedDate>2023-03-06T09:37:22.964Z</lastModifiedDate>
+	<lastModifiedDate_dt>2023-03-06T09:37:22.964Z</lastModifiedDate_dt>
 	<plans_o item-list="true">	<item>	<title_s>Starter</title_s>
 	<price_s>12</price_s>
 	<thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/starter.png</thumbnail_s>
@@ -29,5 +29,5 @@
 	<thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/enterprise.webp</thumbnail_s>
 	<priceName_s/>
 	</item></plans_o>
-	<headline_s>Choose a CrafterCMS plan</headline_s>
+	<heading_t>Choose a CrafterCMS plan</heading_t>
 </page>
