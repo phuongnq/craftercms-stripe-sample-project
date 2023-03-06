@@ -1,4 +1,4 @@
-<content-type name="/page/stripe_prices" is-wcm-type="true">
+<content-type name="/page/plugins/org/craftercms/plugin/stripe/stripe_prices" is-wcm-type="true">
 	<label>Stripe Prices</label>
 	<form>/page/plugins/org/craftercms/plugin/stripe/stripe_prices</form>
 	<form-path>simple</form-path>
