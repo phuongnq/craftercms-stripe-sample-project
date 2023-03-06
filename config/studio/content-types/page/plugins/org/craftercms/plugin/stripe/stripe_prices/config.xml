@@ -1,6 +1,6 @@
 <content-type name="/page/stripe_prices" is-wcm-type="true">
 	<label>Stripe Prices</label>
-	<form>/page/stripe_prices</form>
+	<form>/page/plugins/org/craftercms/plugin/stripe/stripe_prices</form>
 	<form-path>simple</form-path>
 	<model-instance-path>NOT-USED-BY-SIMPLE-FORM-ENGINE</model-instance-path>
 	<file-extension>xml</file-extension>

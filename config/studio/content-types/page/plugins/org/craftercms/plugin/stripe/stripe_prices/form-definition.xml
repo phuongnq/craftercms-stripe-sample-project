@@ -2,14 +2,14 @@
 	<title>Stripe Prices</title>
 	<description></description>
 	<objectType>page</objectType>
-	<content-type>/page/stripe_prices</content-type>
+	<content-type>/page/plugins/org/craftercms/plugin/stripe/stripe_prices</content-type>
 	<imageThumbnail></imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value></value>
+			<value>/templates/plugins/org/craftercms/plugin/stripe/index.ftl</value>
 			<type>template</type>
 		</property>
 		<property>
