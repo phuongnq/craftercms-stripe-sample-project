@@ -23,12 +23,10 @@ class DefaultFormHandler implements FormHandler {
             'https://github.com/phuongnq/craftercms-plugin-stripe'
         )
 
-        println params
-        println Stripe.apiKey
-
+        def domain = siteConfig.getString('stripe.callbackDomain')
         SessionCreateParams sessionParams = new SessionCreateParams.Builder()
-            .setSuccessUrl('/plugins/org/craftercms/plugin/stripe/success.ftl?session_id={CHECKOUT_SESSION_ID}')
-            .setCancelUrl('/plugins/org/craftercms/plugin/stripe/canceled.ftl')
+            .setSuccessUrl(domain + '/plugins/org/craftercms/plugin/stripe/success.ftl?session_id={CHECKOUT_SESSION_ID}')
+            .setCancelUrl(domain + '/plugins/org/craftercms/plugin/stripe/canceled.ftl')
             .setMode(SessionCreateParams.Mode.SUBSCRIPTION)
             .addLineItem(new SessionCreateParams.LineItem.Builder()
                 .setQuantity(1L)

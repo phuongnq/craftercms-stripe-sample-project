@@ -27,5 +27,6 @@
       <webhookSecret>${enc:CCE-V1#sO73Bk+bSQlTtlfW7MNbp9KzpuU19u3q7tZKmabF/f2FyzlV5eqzC0tFOgFvRh3WEprhH3rYvU/UvERbyLyNt8x2KiLfrXv73mpuKp5jZBiCSytU+cxCOJtw/Ocx6Zsl}</webhookSecret>
       <basicPrice>${enc:CCE-V1#JoWT/GpXruewsH7H7LRSmzMOPzUks7BzOEfsASyukEhtSDX7nROzBv5dihxBCILa}</basicPrice>
       <proPrice>${enc:CCE-V1#npbluMz2pYfy2pRmGYlJtKW08/BQy6TRLcsVIUWrDzCY0vniWEYxXXU4Fbb2v3bY}</proPrice>
+      <callbackDomain>http://localhost:8080</callbackDomain>
     </stripe>
 </site>
