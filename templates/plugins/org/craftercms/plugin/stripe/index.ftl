@@ -27,40 +27,36 @@
 
         <div class="price-table-container">
           <@crafter.renderRepeatGroup
-            $field="plans_o";
+            $field="plans_o"
+            $itemTag="section";
             item, index
           >
-            <@crafter.section
-              $field="plans_o"
-              $index="${index}"
-            >
-              <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
-                <input type="hidden" id="${item.priceName_s}" name="priceId">
-                <@crafter.img
-                  $field="plans_o.thumbnail_s"
-                  $index="${index}"
-                  src="${item.thumbnail_s}"
-                  alt="item.title_s"
-                  width="120"
-                />
-                <@crafter.div
-                  $field="plans_o.title_s"
-                  $index="${index}"
-                  class="name"
-                >
-                  ${item.title_s}
-                </@crafter.div>
-                <@crafter.div
-                  $field="plans_o.price_s"
-                  $index="${index}"
-                  class="name"
-                >
-                  ${item.price_s}
-                </@crafter.div>
-                <div class="duration">per <@crafter.span $field="plans_o.recurring_s" $index="${index}">${item.recurring_s}</@crafter.span></div>
-                <button id="basic-plan-btn">Select</button>
-              </form>
-            </@crafter.section>
+            <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
+              <input type="hidden" id="${item.priceName_s}" name="priceId">
+              <@crafter.img
+                $field="plans_o.thumbnail_s"
+                $index="${index}"
+                src="${item.thumbnail_s}"
+                alt="item.title_s"
+                width="120"
+              />
+              <@crafter.div
+                $field="plans_o.title_s"
+                $index="${index}"
+                class="name"
+              >
+                ${item.title_s}
+              </@crafter.div>
+              <@crafter.div
+                $field="plans_o.price_s"
+                $index="${index}"
+                class="name"
+              >
+                ${item.price_s}
+              </@crafter.div>
+              <div class="duration">per <@crafter.span $field="plans_o.recurring_s" $index="${index}">${item.recurring_s}</@crafter.span></div>
+              <button id="basic-plan-btn">Select</button>
+            </form>
           </@crafter.renderRepeatGroup>
         </div>
       </div>
