@@ -27,7 +27,7 @@
 
         <div class="price-table-container">
           <@crafter.renderRepeatGroup
-            $field="plans_o"
+            $field="plans_o";
             item, index
           >
             <@crafter.section
