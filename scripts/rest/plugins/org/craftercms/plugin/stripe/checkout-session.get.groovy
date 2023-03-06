@@ -15,4 +15,4 @@ if (!sessionId) {
 Session session = Session.retrieve(sessionId)
 Gson gson = new Gson()
 
-return gson.toJson(session))
+return gson.toJson(session)
