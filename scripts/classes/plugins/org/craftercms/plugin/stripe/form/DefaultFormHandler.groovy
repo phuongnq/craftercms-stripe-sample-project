@@ -36,8 +36,8 @@ class DefaultFormHandler implements FormHandler {
             .build()
         try {
             Session session = Session.create(sessionParams)
-            println session.getUrl()
-            response.redirect(session.getUrl(), 303)
+            response.setStatus(303)
+            response.sendRedirect(session.getUrl())
             return ''
         } catch(Exception e) {
             def responseData = [:]
