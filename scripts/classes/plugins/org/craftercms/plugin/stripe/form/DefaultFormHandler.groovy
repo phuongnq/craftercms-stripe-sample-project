@@ -38,10 +38,8 @@ class DefaultFormHandler implements FormHandler {
             response.redirect(session.getUrl(), 303)
             return ''
         } catch(Exception e) {
-            Map<String, Object> messageData = new HashMap<>()
-            messageData.put('message', e.getMessage())
-            Map<String, Object> responseData = new HashMap<>()
-            responseData.put('error', messageData)
+            def responseData = [:]
+            responseData.message = e.getMessage()
             response.setStatus(400)
             return responseData
         }
