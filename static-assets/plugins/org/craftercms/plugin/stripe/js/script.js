@@ -1,5 +1,5 @@
 /* Fetch prices and update the form */
-fetch("/plugins/org/craftercms/plugin/stripe/config.json")
+fetch("/api/plugins/org/craftercms/plugin/stripe/config.json")
   .then(r => r.json())
   .then(({basicPrice, proPrice}) => {
     const basicPriceInput = document.querySelector('#basicPrice');
