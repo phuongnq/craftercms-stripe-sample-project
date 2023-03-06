@@ -12,9 +12,11 @@
     <!-- Load Stripe.js on your website. -->
     <script src="https://js.stripe.com/v3/"></script>
     <script src="/static-assets/plugins/org/craftercms/plugin/stripe/js/script.js" defer></script>
+    <@crafter.head/>
   </head>
 
   <body>
+    <@crafter.body_top/>
     <div class="togethere-background"></div>
     <div class="sr-root">
       <div class="sr-main">
@@ -56,5 +58,6 @@
       </div>
     </div>
     <div id="error-message" class="error-message"></div>
+    <@crafter.body_bottom/>
   </body>
 </html>
