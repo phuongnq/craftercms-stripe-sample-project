@@ -45,14 +45,14 @@
                   height="120"
                 />
                 <@crafter.div
-                  $field="plans_o.title_s
+                  $field="plans_o.title_s"
                   $index="${index}"
                   class="name"
                 >
                   ${item.title_s}
                 </div>
                 <@crafter.div
-                  $field="plans_o.price_s
+                  $field="plans_o.price_s"
                   $index="${index}"
                   class="name"
                 >
