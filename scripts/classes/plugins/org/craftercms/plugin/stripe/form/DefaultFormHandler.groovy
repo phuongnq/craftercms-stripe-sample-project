@@ -35,13 +35,14 @@ class DefaultFormHandler implements FormHandler {
             .build()
         try {
             Session session = Session.create(sessionParams)
+            println session.getUrl()
             response.redirect(session.getUrl(), 303)
             return ''
         } catch(Exception e) {
             def responseData = [:]
             responseData.message = e.getMessage()
             response.setStatus(400)
-            return responseData
+            return '500.ftl'
         }
     }
 }
