@@ -2,7 +2,7 @@ package plugins.org.craftercms.plugin.stripe.form
 
 @Grapes([
     @Grab(group='com.stripe', module='stripe-java', version='22.10.0', initClass=false)
-)]
+])
 
 import com.stripe.Stripe
 import com.stripe.model.Event
