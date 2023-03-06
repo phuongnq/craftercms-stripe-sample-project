@@ -42,7 +42,7 @@ class DefaultFormHandler implements FormHandler {
             messageData.put('message', e.getMessage())
             Map<String, Object> responseData = new HashMap<>()
             responseData.put('error', messageData)
-            response.status(400)
+            response.setStatus(400)
             return responseData
         }
     }
