@@ -19,7 +19,7 @@
         </header>
         <div class="sr-payment-summary completed-view">
           <h1>Your payment was canceled</h1>
-          <button onclick="window.location.href = '/';">Restart demo</button>
+          <button onclick="window.location.href = '/plans';">Restart demo</button>
         </div>
       </div>
       <div class="sr-content">

@@ -26,7 +26,7 @@
             <pre>
 
             </pre>
-            <button onclick="window.location.href = '/';">Restart demo</button>
+            <button onclick="window.location.href = '/plans';">Restart demo</button>
 
             <form action="/plugins/org/craftercms/plugin/stripe/customer-portal" method="POST">
               <!-- In practice, use the Stripe customer ID on the server to redirect to the customer portal. This is for demo: -->
