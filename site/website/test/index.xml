@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page>
-  <content-type>/page/plugins/org/craftercms/plugin/stripe/stripe_prices</content-type>
-  <display-template>/templates/plugins/org/craftercms/plugin/stripe/index.ftl</display-template>
-  <no-template-required>true</no-template-required>
-  <merge-strategy>inherit-levels</merge-strategy>
-  <objectGroupId>e37d</objectGroupId>
-  <objectId>e37d4b6d-7ae8-90f7-d340-fd3d77727b5c</objectId>
-  <internal-name>test</internal-name>
-  <navLabel>test</navLabel>
-  <placeInNav>false</placeInNav>
-  <orderDefault_f>-1</orderDefault_f>
-  <file-name>index.xml</file-name>
-  <folder-name>test</folder-name>
-  <createdDate>2023-03-06T07:54:57.709Z</createdDate>
-  <createdDate_dt>2023-03-06T07:54:57.709Z</createdDate_dt>
-  <lastModifiedDate>2023-03-06T09:37:22.964Z</lastModifiedDate>
-  <lastModifiedDate_dt>2023-03-06T09:42:07.252Z</lastModifiedDate_dt>
-  <plans_o item-list="true">
-    <item>
-      <title_s>Starter</title_s>
-      <price_s>12</price_s>
-      <thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/starter.png</thumbnail_s>
-      <priceName_s/>
-    </item>
-    <item>
-      <title_s>Professional</title_s>
-      <price_s>18</price_s>
-      <thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/professional.png</thumbnail_s>
-      <priceName_s/>
-    </item>
-    <item>
-      <title_s>Enterprise</title_s>
-      <price_s>20</price_s>
-      <thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/enterprise.webp</thumbnail_s>
-      <priceName_s/>
-    </item>
-  </plans_o>
-  <heading_t><![CDATA[Choose a CrafterCMS plan aa]]></heading_t>
+	<content-type>/page/plugins/org/craftercms/plugin/stripe/stripe_prices</content-type>
+	<display-template>/templates/plugins/org/craftercms/plugin/stripe/index.ftl</display-template>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e37d</objectGroupId>
+	<objectId>e37d4b6d-7ae8-90f7-d340-fd3d77727b5c</objectId>
+	<internal-name>test</internal-name>
+	<navLabel>test</navLabel>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<file-name>index.xml</file-name>
+	<folder-name>test</folder-name>
+	<createdDate>2023-03-06T07:54:57.709Z</createdDate>
+	<createdDate_dt>2023-03-06T07:54:57.709Z</createdDate_dt>
+	<lastModifiedDate>2023-03-06T09:52:48.867Z</lastModifiedDate>
+	<lastModifiedDate_dt>2023-03-06T09:52:48.867Z</lastModifiedDate_dt>
+	<plans_o item-list="true">	<item>	<title_s>Starter</title_s>
+	<price_s>$12</price_s>
+	<thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/starter.png</thumbnail_s>
+	<priceName_s/>
+	</item>	<item>	<title_s>Professional</title_s>
+	<price_s>$18</price_s>
+	<thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/professional.png</thumbnail_s>
+	<priceName_s/>
+	</item>	<item>	<title_s>Enterprise</title_s>
+	<price_s>$25</price_s>
+	<thumbnail_s>/static-assets/plugins/org/craftercms/plugin/stripe/img/enterprise.webp</thumbnail_s>
+	<priceName_s/>
+	</item></plans_o>
+	<heading_t>Choose a CrafterCMS plan aa</heading_t>
 </page>
