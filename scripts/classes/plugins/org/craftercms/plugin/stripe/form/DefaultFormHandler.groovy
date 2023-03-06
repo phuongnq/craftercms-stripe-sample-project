@@ -23,7 +23,7 @@ class DefaultFormHandler implements FormHandler {
             'https://github.com/phuongnq/craftercms-plugin-stripe'
         )
 
-        SessionCreateParams params = new SessionCreateParams.Builder()
+        SessionCreateParams sessionParams = new SessionCreateParams.Builder()
             .setSuccessUrl('/plugins/org/craftercms/plugin/stripe/success.ftl?session_id={CHECKOUT_SESSION_ID}')
             .setCancelUrl('/plugins/org/craftercms/plugin/stripe/canceled.ftl')
             .setMode(SessionCreateParams.Mode.SUBSCRIPTION)
@@ -34,7 +34,7 @@ class DefaultFormHandler implements FormHandler {
             )
             .build()
         try {
-            Session session = Session.create(params)
+            Session session = Session.create(sessionParams)
             response.redirect(session.getUrl(), 303)
             return ''
         } catch(Exception e) {
