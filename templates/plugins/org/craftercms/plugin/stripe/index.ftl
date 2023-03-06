@@ -61,7 +61,7 @@
                 <div class="duration">per month</div>
                 <button id="basic-plan-btn">Select</button>
               </form>
-            </@craftercms.section>
+            </@crafter.section>
           </@crafter.renderRepeatGroup>
         </div>
       </div>
