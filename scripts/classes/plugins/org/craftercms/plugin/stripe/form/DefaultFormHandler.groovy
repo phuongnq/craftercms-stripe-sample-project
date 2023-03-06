@@ -15,7 +15,7 @@ import groovy.util.logging.Slf4j
 
 @Slf4j
 class DefaultFormHandler implements FormHandler {
-    def handle(params, request, siteConfig, siteItemService) {
+    def handle(params, request, response, siteConfig, siteItemService) {
         Stripe.apiKey = siteConfig.getString('stripe.secretKey')
         Stripe.setAppInfo(
             'craftercms-plugin-stripe',
