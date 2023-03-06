@@ -26,34 +26,43 @@
         <@crafter.h1 $field="heading_t">${contentModel.heading_t}</@crafter.h1>
 
         <div class="price-table-container">
-          <section>
-            <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
-              <input type="hidden" id="basicPrice" name="priceId">
-              <img
-                src="/static-assets/plugins/org/craftercms/plugin/stripe/img/starter.png"
-                width="120"
-                height="120"
+          <@crafter.renderRepeatGroup
+            $field="plans_o"
+            item, index
+          >
+            <@crafter.section
+              $field="plans_o"
+              $index="${index}"
+            >
+              <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
+                <input type="hidden" id="${item.priceName_s}" name="priceId">
+                <@crafter.img
+                  $field="plans_o.thumbnail_s"
+                  $index="${index}"
+                  src="${item.thumbnail_s}"
+                  alt="item.title_s"
+                  width="120"
+                  height="120"
                 />
-              <div class="name">Starter</div>
-              <div class="price">$12</div>
-              <div class="duration">per month</div>
-              <button id="basic-plan-btn">Select</button>
-            </form>
-          </section>
-          <section>
-            <form action="/plugins/org/craftercms/plugin/stripe/create-checkout-session" method="POST">
-              <input type="hidden" id="proPrice" name="priceId">
-              <img
-                src="/static-assets/plugins/org/craftercms/plugin/stripe/img/professional.png"
-                width="120"
-                height="120"
-                />
-              <div class="name">Professional</div>
-              <div class="price">$18</div>
-              <div class="duration">per month</div>
-              <button id="pro-plan-btn">Select</button>
-            </form>
-          </section>
+                <@crafter.div
+                  $field="plans_o.title_s
+                  $index="${index}"
+                  class="name"
+                >
+                  ${item.title_s}
+                </div>
+                <@crafter.div
+                  $field="plans_o.price_s
+                  $index="${index}"
+                  class="name"
+                >
+                  ${item.price_s}
+                </div>
+                <div class="duration">per month</div>
+                <button id="basic-plan-btn">Select</button>
+              </form>
+            </@craftercms.section>
+          </@crafter.renderRepeatGroup>
         </div>
       </div>
     </div>
